@@ -1,7 +1,7 @@
 '''
 Snake game.
 Authors:
-<insert the names of your teammates here>
+<Caetia Short, Deja>
 '''
 
 import pygame
@@ -29,7 +29,7 @@ DIRECTION_DOWN = (0, 1)
 
 # Background color of the snake grid.
 COLOR_BACKGROUND = (255, 255, 255)  # rgb color for white
-# This is the color of the snake's head. 
+# This is the color of the snake's head.
 COLOR_SNAKE_HEAD = (255, 0, 0)      # rgb color for red
 # This is the color of the rest of the snake.
 COLOR_SNAKE = (0, 255, 0)           # rgb color for green
@@ -40,7 +40,7 @@ COLOR_GAME_OVER_TEXT = (0, 0, 0)    # rgb color for black
 
 def get_direction(previous_direction, event_key):
     """Return the new direction of the snake: one of DIRECTION_{LEFT,RIGHT,UP,DOWN}.
-    previous_direction - the previous direction of the snake; one of DIRECTION_{LEFT,RIGHT,UP,DOWN} 
+    previous_direction - the previous direction of the snake; one of DIRECTION_{LEFT,RIGHT,UP,DOWN}
     event_key - the event that the user pressed; one of https://www.pygame.org/docs/ref/key.html
     If event_key does not correspond with any of the arrows keys, return previous_direction.
     """
@@ -207,7 +207,7 @@ def process_events(direction, game_over):
     return (direction, should_reset_game)
 
 def start_game():
-    """Starts the snake game. 
+    """Starts the snake game.
     Do not edit this function.
     """
     # Initialize the pygame module.
@@ -222,7 +222,7 @@ def start_game():
     # The snake starts out traveling in the right direction.
     direction = DIRECTION_RIGHT
     # The 2-tuple representing the position of the food in the grid.
-    food = create_food_position() 
+    food = create_food_position()
     # The list of 2-tuples that make up the snake. The first element in the list is the snake's head.
     snake = get_initial_snake()
     # Tracks whether the game is over. When the game is over the user can press the space bar to restart.
